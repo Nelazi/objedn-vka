@@ -72,8 +72,8 @@ async function fetchExchangeRate() {
     const eurRate = parseFloat(eurLine.split('|')[4].replace(',', '.'));
     return eurRate;
 }
-    
-// 📨 Odeslání formuláře
+
+// Odeslání formuláře
 const form = document.getElementById("orderForm");
 form.addEventListener("submit", async function(e) {
     e.preventDefault();
